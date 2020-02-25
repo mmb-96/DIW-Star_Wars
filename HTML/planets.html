@@ -35,8 +35,20 @@
         <a href="../index.html" title="Go to homepage" itemprop=“url" style="color: orange; margin-left: 1%;"><span itemprop=“title">Home</span></a> > 
         <strong>Planets</strong>
     </span>
-    <di>
-        
+    <div id="planets" align="center">
+        <span v-for="int in info">
+            <h2>{{int.name}}</h2>
+            <ul>
+                <li>Rotation period: {{int.rotation_period}}</li>
+                <li>Orbital period: {{int.orbital_period}}</li>
+                <li>Diameter: {{int.diameter}}</li>
+                <li>Climate: {{int.climate}}</li>
+                <li>Gravity: {{int.gravity}}</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+        </span>
     </div>
     <!--Pie de pagina-->
     <div id="footer">
@@ -50,6 +62,8 @@
         <br>
         <small>&copy; 2020 Star Wars List. Todos los derechos reservados.</small>
     </div>
-    <script src="../JS/"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JS/vueJS/planets.js"></script>
 </body>
 </html>

@@ -35,8 +35,22 @@
         <a href="../index.html" title="Go to homepage" itemprop=“url" style="color: orange; margin-left: 1%;"><span itemprop=“title">Home</span></a> > 
         <strong>Peoples</strong>
     </span>
-    <di>
-        
+    <div id="people" align="center">
+        <span v-for="int in info">
+            <h2>{{int.name}}</h2>
+            <ul>
+                <li>Height: {{int.height}}</li>
+                <li>Mass: {{int.mass}}</li>
+                <li>Hair color: {{int.hair_color}}</li>
+                <li>Skin color: {{int.skin_color}}</li>
+                <li>Eye color: {{int.eye_color}}</li>
+                <li>Birth year: {{int.birth_year}}</li>
+                <li>Gender: {{int.gender}}</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+        </span>
     </div>
     <!--Pie de pagina-->
     <div id="footer">
@@ -49,6 +63,8 @@
         <br>
         <small>&copy; 2020 Star Wars List. Todos los derechos reservados.</small>
     </div>
-    <script src="../JS/"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JS/vueJS/people.js"></script>
 </body>
 </html>

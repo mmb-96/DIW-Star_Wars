@@ -35,8 +35,22 @@
         <a href="../index.html" title="Go to homepage" itemprop=“url" style="color: orange; margin-left: 1%;"><span itemprop=“title">Home</span></a> > 
         <strong>Vehicles</strong>
     </span>
-    <di>
-        
+    <div id="vehicles" align="center">
+        <span v-for="int in info">
+            <h2>{{int.name}}</h2>
+            <ul>
+                <li>Model: {{int.model}}</li>
+                <li>Cost in credits: {{int.cost_in_credits}}</li>
+                <li>Length: {{int.length}}</li>
+                <li>Max atmosphering Speed: {{int.max_atmosphering_speed}}</li>
+                <li>Passengers: {{int.passengers}}</li>
+                <li>Cargo capacity: {{int.cargo_capacity}}</li>
+                <li>Consumables: {{int.consumables}}</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+        </span>
     </div>
     <!--Pie de pagina-->
     <div id="footer">
@@ -50,6 +64,8 @@
         <br>
         <small>&copy; 2020 Star Wars List. Todos los derechos reservados.</small>
     </div>
-    <script src="../JS/"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JS/vueJS/vehicles.js"></script>
 </body>
 </html>

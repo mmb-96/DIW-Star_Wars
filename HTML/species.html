@@ -35,8 +35,22 @@
         <a href="../index.html" title="Go to homepage" itemprop=“url" style="color: orange; margin-left: 1%;"><span itemprop=“title">Home</span></a> > 
         <strong>Species</strong>
     </span>
-    <di>
-        
+    <div id="species" align="center">
+        <span v-for="int in info">
+            <h2>{{int.name}}</h2>
+            <ul>
+                <li>Classification: {{int.classification}}</li>
+                <li>Designation: {{int.designation}}</li>
+                <li>Average height: {{int.average_height}}</li>
+                <li>Skin colors: {{int.skin_colors}}</li>
+                <li>Hair colors: {{int.hair_colors}}</li>
+                <li>Eye colors: {{int.eye_colors}}</li>
+                <li>Language: {{int.language}}</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+        </span>
     </div>
     <!--Pie de pagina-->
     <div id="footer">
@@ -50,6 +64,8 @@
         <br>
         <small>&copy; 2020 Star Wars List. Todos los derechos reservados.</small>
     </div>
-    <script src="../JS/"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JS/vueJS/species.js"></script>
 </body>
 </html>

@@ -35,8 +35,20 @@
         <a href="../index.html" title="Go to homepage" itemprop=“url" style="color: orange; margin-left: 1%;"><span itemprop=“title">Home</span></a> > 
         <strong>Films</strong>
     </span>
-    <di>
-        
+    <div id="films" align="center">
+        <span v-for="int in info">
+            <h2 class="text-center">{{int.episode_id}} - {{int.title}}</h2>
+            <span v-html="int.opening_crawl"></span>
+            <br>
+            <p>Director: {{int.director}}</p>
+            <br>
+            <p>Producer: {{int.producer}}</p>
+            <br>
+            <p>Data realease: {{int.release_date}}</p>
+            <br>
+            <hr>
+            <br>
+        </span>
     </div>
     <!--Pie de pagina-->
     <div id="footer">
