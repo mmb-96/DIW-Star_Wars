@@ -1,0 +1,236 @@
+#menuIco {
+  margin-right: 10px;
+  margin-top: 17.5px;
+  float: right;
+  font-size: 50px;
+}
+
+#logo {
+  margin-top: 2%;
+  margin-left: 2%;
+  float: left;
+  width: 230px;
+}
+@media only screen and (min-width: 800px) {
+  #logo {
+    margin-top: 0.5%;
+    width: 20%;
+  }
+}
+
+.barra {
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 990px) {
+  .barra {
+    width: 80% !important;
+  }
+}
+
+#menu {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  z-index: 101;
+  background-color: black;
+}
+
+#menu ul, #menu li {
+  margin: 0px auto;
+  padding: 0 0;
+  list-style: none;
+  float: right;
+}
+
+#menu li {
+  float: left;
+  position: relative;
+  font: 17px Arial, sans-serif;
+}
+@media screen and (max-width: 990px) {
+  #menu li {
+    display: block;
+    line-height: 40px;
+    padding: 0 14px;
+  }
+}
+
+#menu ul a {
+  display: block;
+  line-height: 50px;
+  padding: 0 10px;
+  text-decoration: uppercase;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 990px) {
+  #menu ul a {
+    display: block;
+    line-height: 40px;
+    padding: 0 14px;
+  }
+}
+
+#menu input {
+  display: none;
+  margin: 0 0;
+  padding: 0 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#menu label {
+  display: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 17px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 990px) {
+  #menu ul {
+    background: black;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+
+  #menu input, #menu label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  #menu input {
+    z-index: 4;
+  }
+
+  #menu input:checked ~ ul {
+    display: block;
+    top: 57px;
+  }
+}
+body {
+  margin: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  font: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.contenido {
+  text-align: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  text-align: left;
+  margin-right: 10px;
+  list-style: none;
+}
+
+img.grande {
+  width: 60%;
+  height: 80%;
+  display: block;
+  margin: auto;
+}
+@media only screen and (min-width: 800px) {
+  img.grande {
+    width: 40%;
+    height: 60%;
+  }
+}
+
+.pam {
+  margin-left: 1%;
+}
+
+.last {
+  color: orange;
+}
+
+#header {
+  height: 80px;
+}
+@media only screen and (min-width: 800px) {
+  #header {
+    height: 110px;
+  }
+}
+
+.padre {
+  display: flex;
+  justify-content: center;
+}
+
+.hijo {
+  padding: 10px;
+  margin: auto;
+}
+
+#footer {
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font: 17px Arial, sans-serif;
+}
+
+#social i {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  font-size: 35px;
+  color: white;
+}
+@media only screen and (min-width: 800px) {
+  #social i {
+    font-size: 50px;
+  }
+}
+
+div p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+video {
+  width: 95%;
+}
+@media only screen and (min-width: 800px) {
+  video {
+    width: 60%;
+  }
+}
+
+td p {
+  text-align: right;
+}
+
+table {
+  width: 50%;
+  border: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

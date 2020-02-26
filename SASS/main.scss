@@ -1,15 +1,13 @@
 @import 'utilities/variables';
 
-@import 'base/typo';
-
 @import 'layout/navigation';
-@import 'layout/body';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/forms';
 
-@import 'components/buttons';
-@import 'components/jumbo';
+@import 'layout/body';
+
+@import 'layout/header';
+
+@import 'layout/footer';
 
 @import 'views/home';
+
 @import 'views/contact';

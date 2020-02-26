@@ -1,0 +1,118 @@
+#menuIco {
+    margin-right: 10px;
+    margin-top: 17.5px;
+    float: right;
+    font-size: $tamano_menu
+}
+
+#logo {
+    margin-top: 2%;
+    margin-left: 2%;
+    float: left;
+    width: 230px;
+
+    @media only screen and (min-width: 800px) {
+        margin-top: 0.5%;
+        width: 20%;
+    }
+}
+
+.barra {
+    margin:0 auto;
+    position: $posicion_menu;
+
+    @media screen and (max-width: 990px){ 
+        width: 80%!important;
+    }
+}
+
+#menu {
+    height: $tamano_menu;
+    width: $tamano_width_menu;
+    position: $posicion_menu; 
+    z-index: 101;
+    background-color: $color_fondo;
+}
+
+#menu ul,#menu li {
+    margin: 0px auto;
+    padding: 0 0;
+    list-style: $deco_texto;
+    float: right;
+}
+
+#menu li {   
+    float: left;
+    position: $posicion_menu;
+    font: $tamano_letra $tipo_letra;
+
+    @media screen and (max-width: 990px){ 
+        display: block;
+        line-height: 40px;
+        padding: 0 14px;
+    }
+}
+
+#menu ul a {
+    display: block;
+    line-height: $tamano_menu;
+    padding: 0 10px;
+    text-decoration: uppercase;
+    color: $color_letas;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    @media screen and (max-width: 990px){ 
+        display: block;
+        line-height: 40px;
+        padding: 0 14px;
+    }
+}
+
+#menu input {
+    display: $deco_texto;
+    margin: 0 0;
+    padding: 0 0;
+    width: $tamano_menu;
+    height: $tamano_menu;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu label {
+    display: $deco_texto;
+    width: $tamano_menu;
+    height: $tamano_menu;
+    line-height: $tamano_menu;
+    text-align: $alineacion_texto;
+    font-size: $tamano_letra;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 990px){ 
+    #menu ul {
+        background: $color_fondo;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 3;
+        height: auto;
+        display: $deco_texto
+    }
+
+    #menu input,#menu label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
+    #menu input {
+        z-index: 4
+    }
+
+    #menu input:checked ~ ul {
+        display: block;
+        top: 57px;
+    }
+}

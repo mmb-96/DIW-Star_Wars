@@ -1,0 +1,12 @@
+div p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+video {
+    width: $tamano_video;
+
+    @media only screen and (min-width: 800px) {
+        width: 60%;
+    }
+}

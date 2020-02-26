@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../SASS/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Star Wars List - Films</title>
 </head>
@@ -33,12 +33,12 @@
     <!--Cuerpo-->
     <div style="clear: both;">
     </div>
-    <span>
-        <a href="../index.html" title="Go to homepage" itemprop=“url" style="color: orange; margin-left: 1%;"><span itemprop=“title">Home</span></a> > 
+    <span class="pam">
+        <a href="../index.html" title="Go to homepage" itemprop=“url" class="last"><span itemprop=“title">Home</span></a> > 
         <strong>Films</strong>
     </span>
-    <img src="../IMG/Films.jpg" id="logo2" alt="Cover of the movies."/>
-    <div id="films" class="video">
+    <img src="../IMG/Films.jpg" class="grande" alt="Cover of the movies."/>
+    <div id="films" class="contenido">
         <span v-for="int in info">
             <h2 class="text-center">{{int.episode_id}} - {{int.title}}</h2>
             <span v-html="int.opening_crawl"></span>

@@ -9,6 +9,7 @@ body {
 
 a {
     text-decoration: $deco_texto;
+    color: $color_letas;
 }
 
 .contenido {
@@ -16,4 +17,22 @@ a {
     width: $vision_contenido;
     margin-left: auto;
     margin-right: auto;
+}
+
+ul li {
+    text-align:left;
+    margin-right: 10px;
+    list-style: $deco_texto;
+}
+
+img.grande{
+    width: 60%;
+    height: 80%;
+    display: block;
+    margin: auto;
+
+    @media only screen and (min-width: 800px) {
+        width: 40%;
+        height: 60%;
+    }
 }
