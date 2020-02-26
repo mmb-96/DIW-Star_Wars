@@ -1,0 +1,26 @@
+.padre {
+    display: flex;
+    justify-content: $alineacion_texto;
+  }
+  
+.hijo {
+    padding: 10px;
+    margin: auto;
+}
+
+#footer {
+    height: 100%;
+    text-align: $alineacion_texto;
+    background-color: $color_letas;
+    color: $color_letas;
+    text-decoration: $deco_texto;
+    list-style: $deco_texto;
+}
+
+#social i {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    font-size: $tamano_icono;
+    color:$color_letas;
+}

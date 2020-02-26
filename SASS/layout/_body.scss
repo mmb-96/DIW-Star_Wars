@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font: $tipo_letra;
+    background-color: $color_fondo;
+    color: $color_letas;
+}
+
+a {
+    text-decoration: $deco_texto;
+}
+
+.contenido {
+    text-align: $alineacion_texto;
+    width: $vision_contenido;
+    margin-left: auto;
+    margin-right: auto;
+}
